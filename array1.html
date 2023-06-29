@@ -1,0 +1,58 @@
+<html>
+    <head>Objects</head>
+    <body>
+        <div id = "main" ></div>
+    </body>
+    <script>
+     let data=[  {
+    id : 2,
+    name : "Mansi Dhingra",
+    profession : "IT",
+    role:"student",
+    course:"db",
+    marks:[43,98,68,76,45]
+   
+
+},
+{
+    id: 3,
+    name : "Shruti",
+    profession : "IT",
+    role:"student",
+    course:"java",
+    marks:[23,68,91,56,44]
+}
+]
+for (const property in "marks") {
+  console.log(`${property}: ${data[property]}`);
+}
+for (const property in data) {
+  console.log(`${property}: ${data[property]}`);
+}
+for (const element of "marks") {
+  console.log(element);
+}
+
+//object methods
+console.log(Object.keys(data));
+
+console.log(Object.values(data));
+
+for (const [key, value] of Object.entries(data)) {
+  console.log(`${key}: ${value}`);
+}
+
+
+
+/*let allstudents = data.filter(data1 => data1.role === student);
+console.log(allstudents);*/
+
+    </script>
+</html>
+
+
+
+
+
+
+

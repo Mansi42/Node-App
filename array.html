@@ -1,0 +1,195 @@
+<html>
+    <head>Objects</head>
+    <body>
+        <div id = "main" ></div>
+    </body>
+    <script>
+        //array of objects
+        let data = [
+    {
+        "id" : 1,
+        "name" : "Anshu",
+        "profession" : "CSE",
+        "role":"student",
+        "course":"js"
+
+    },
+    {
+        "id" : 2,
+        "name" : "Mansi Dhingra",
+        "profession" : "IT",
+        "role":"student",
+        "course":"db"
+    },
+    {
+        "id" : 3,
+        "name" : "Shruti",
+        "profession" : "IT",
+        "role":"student",
+        "course":"java"
+    },
+    {
+        "id" : 4,
+        "name" : "Shiffali",
+        "profession" : "CSE",
+        "role":"student",
+        "course":"nodejs"
+
+    },
+    {
+        "id" : 5,
+        "name" : "nargis",
+        "profession" : "CSE",
+        "role":"student",
+        "course":"react"
+
+    }
+]
+
+//object of object
+let data1 = {
+    student1:{
+        id : 1,
+        name : "Anshu",
+        profession : "CSE",
+        role:"student",
+        course:"js",
+        marks:[23,78,98,56,45],
+        subjects:{hindi:80,
+            duration:8,
+            marksS:[78,90,35,57],
+            timetable:[{"1stweek":45,"2ndweek":78}]
+        }
+
+    },
+    student2:{
+        id : 2,
+        name : "Mansi Dhingra",
+        profession : "IT",
+        role:"student",
+        course:"db",
+        marks:[43,98,28,76,45]
+       
+
+    },
+    student3:{
+        id: 3,
+        name : "Shruti",
+        profession : "IT",
+        role:"student",
+        course:"java",
+        marks:[23,68,91,56,44]
+    },
+    student4: {
+        id : 4,
+        name : "Shiffali",
+        profession : "CSE",
+        role:"student",
+        course:"nodejs",
+        marks:[73,71,68,56,48]
+
+    },
+    student5:{
+        id : 5,
+        name : "nargis",
+        profession : "CSE",
+        role:"student",
+        course:"react",
+        marks:[83,68,38,57]
+
+    }
+}
+/*document.getElementById("main").innerHTML = data1.marks.reduce((total,num1) => {
+          return total - num1;
+      });*/
+
+      //2nd 
+      let data3={
+          user1: {
+    id : 2,
+    name : "Mansi Dhingra",
+    profession : "IT",
+    role:"student",
+    course:"db",
+    marks:[43,98,68,76,45]
+   
+
+},
+student1:{
+    id: 3,
+    name : "Shruti",
+    profession : "IT",
+    role:"student",
+    course:"java",
+    marks:[23,68,91,56,44]
+}
+      }
+
+
+
+
+    
+console.log(data1)
+
+//loops
+for (const property in "marks") {
+  console.log(`${property}: ${data[property]}`);
+}
+for (const property in data) {
+  console.log(`${property}: ${data[property]}`);
+}
+for (const element of "marks") {
+  console.log(element);
+}
+
+//object methods
+
+//key
+console.log(Object.keys(data1));
+document.getElementById("main").innerHTML = Object.keys(data1)
+
+//value
+console.log(Object.values(data1));
+
+
+//entries
+//for (const [key, value] of Object.entries(data1)) {
+  console.log(Object.entries(data1));
+
+
+//assign
+const returnedTarget = Object.assign(data1, data3);
+
+console.log(data1);
+console.log(returnedTarget === data1);
+
+
+//has own
+console.log(Object.hasOwn(data1.student1, 'name'));
+
+
+//freeze
+Object.freeze(data1.student1);
+data1.student1.name="shweta";
+console.log(data1.name);
+
+//isfrozen
+console.log(Object.isFrozen(data1.student1));
+
+//string array
+let laptops = ["hp","dell","acer","lenovo","asus","macbook"]
+console.log(laptops)
+document.getElementById("main").innerHTML = laptops.includes("acer");
+
+    
+//number array
+/*let marks = [45,89,95,99,34,78]
+console.log(marks)*/
+        
+    </script>
+</html>
+
+
+
+
+

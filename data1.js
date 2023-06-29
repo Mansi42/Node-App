@@ -1,0 +1,20 @@
+[{
+        
+    "id":4,
+    "name":"nargis",
+    "profession":"CSE1",
+    "role":"student"
+},
+{
+"id":5,
+"name":"mansi",
+"profession":"IT",
+"role":"student"
+},
+{
+"id":6,
+"name":"shruti",
+"profession":"IT",
+"role":"student"
+}
+]

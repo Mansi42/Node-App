@@ -1,0 +1,23 @@
+{
+    "user4":
+    {
+        "id":4,
+        "name":"nargis",
+        "profession":"CSE1",
+        "role":"student"
+        },
+        "user5":
+        {
+            "id":5,
+            "name":"mansi",
+            "profession":"IT",
+            "role":"student"
+            },
+            "user6":
+            {
+                "id":6,
+                "name":"shruti",
+                "profession":"IT",
+                "role":"student"
+                }
+            }
